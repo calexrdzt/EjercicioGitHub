@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+}
+
+
+.titulo{
+    font-size: 70px;
+    margin: 20px auto;
+    text-align: center;
+    color: rgb(53, 147, 255);
+    text-shadow: 4px 2px  rgb(0, 47, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(207, 204, 204);
+    border-radius: 20px;
+    width: 70%;
+    margin: auto auto;
+    height: 500px;
+
+
+    &__info{
+        width: 50%;
+        padding: 30px;
+    }
+
+    &__imagen{
+        height: 500px;
+        width: 50%;
+        background-position: center center;
+      //  background-color: rebeccapurple;
+        border-radius: 0 20px 20px 0;
+
+
+
+        &-nueva{
+            height: 450px;
+            width: 90%;
+         //   background: rebeccapurple;
+            margin: 25px auto ;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+
+    &__input{
+
+        &-url{
+        width:90%;
+        height: 25px;
+        }
+
+        &-texto{
+            width:90%;
+            height: 25px;
+        }
+
+        &-color{
+            width:90%;
+            height: 25px;
+        }
+
+        &-tamano{
+            width:90%;
+        height: 25px;
+        }
+    }
+
+    &__botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+}
+ 
+.boton{
+    &__crear{
+        background: green;
+        color: white;
+        width: 100px;
+        height: 32px;
+        border: none;
+        border-radius: 15px;
+        margin: 0 15px;
+    }
+
+    &__limpiar{
+        background: red;
+        color: white;  
+        width: 100px;
+        height: 32px;
+        border: none;
+        border-radius: 15px;
+        margin: 0 15px;
+    }
+}
+
+.texto{
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
