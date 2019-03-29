@@ -3,7 +3,7 @@ function paginaCargada(){
     var url = document.querySelector('.contenedor__input-url');
     var texto = document.querySelector('.contenedor__input-texto');
     var color = document.querySelector('.contenedor__input-color');
-    var tamano = document.querySelector('.contenedor__input-tamano');
+    var tam = document.querySelector('.contenedor__input-tamano');
     
     var imagen = document.querySelector('.contenedor__imagen-nueva');
     var crear = document.querySelector('.boton__crear');
@@ -18,7 +18,7 @@ function paginaCargada(){
         imagen.style.backgroundImage= 'url('+url.value+')';
         text.innerHTML= texto.value;
         text.style.color= color.value;
-        text.style.fontSize= tamano.value+'px';
+        text.style.fontSize= tam.value+'px';
         crear.style.display= 'none';
 
         console.log('iivnaorñna');
@@ -47,7 +47,7 @@ function paginaCargada(){
         text.style.color= '';
         url.value = '';
         texto.value = '';
-        tamano.value= 50;
+        tam.value= 50;
         color.value='black';
         crear.style.display= 'block';
 
@@ -61,7 +61,7 @@ function paginaCargada(){
 
     }
     texto.addEventListener('input',nombreTiempoReal);
-    tamano.addEventListener('input',nombreTiempoReal);
+    tam.addEventListener('input',nombreTiempoReal);
     color.addEventListener('input',nombreTiempoReal);
 
     
